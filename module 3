@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+body {
+  font-family: "Lato", sans-serif;
+}
+     html {
+    background-color: #016295;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    font-family: "Lato",sans-serif;
+}
+
+h1 {
+    font-size: 200%;
+    height: 50px;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 125%;
+    color: #024669;
+    float: right;
+    position: relative;
+    padding: 1% 2% 1% 2%;
+    background-color: #2280BF;
+    width: auto;
+    margin-top: -3.4%;
+    margin-right: -3.4%;
+    outline: 1px solid black;
+    
+}
+
+p {
+    color: #024669;
+    clear: right;
+    padding: 1% 2% 1% 2%;
+}
+
+#colum1 {
+    background-color: #F0D27A;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 29.33%;
+    float: left;
+    padding: 1% 1% 1% 1%;
+    outline: 1px solid black;
+
+}
+
+#hchicken {
+    background-color: #FDB813;
+}
+
+#colum2 {
+    background-color: #AFD776;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 29.33%;
+    float: left;
+    padding: 1% 1% 1% 1%;
+    outline: 1px solid black;
+}
+
+#hbeef {
+    background-color: #80C31C;
+}
+    
+#colum3 {
+    background-color: #95CAE9;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 29.33%;
+    float: left;
+    padding: 1% 1% 1% 1%;
+    outline: 1px solid black;
+}
+
+#hlamb {
+    background-color: #5095CE;
+}
+
+/* RESPONSIVE MEDIA CODE */
+/*************************/
+/* Screens 991px or less */
+@media screen and (max-width: 991px) {
+    
+    #colum1 {
+    width: 45%;
+    }
+    
+    #colum2 {
+        width: 45%;
+    }
+    
+    #colum3 {
+        width: 94%;
+        height: 150px auto;
+    }
+    
+    #hchicken, #hbeef {
+        font-size: 125%;
+        float: right;
+        position: relative;
+        padding: 1% 2% 1% 2%;
+        width: auto;
+        margin-top: -2.3%;
+        margin-right: -2.2%;
+    }
+    
+    #hlamb {
+        font-size: 125%;
+        float: right;
+        position: relative;
+        padding: 1% 2% 1% 2%;
+        width: auto;
+        margin-top: -1.1%;
+        margin-right: -1.1%;
+    
+    }
+    
+}
+
+/* Screens 767px or less */
+@media screen and (max-width: 767px) {
+    
+    #colum1 {
+    width: auto;
+        margin-right: 6%;
+        margin-left:  6%;;
+    }
+    
+    #colum2 {
+        width: auto;
+        margin-top: 5%;
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+    
+    #colum3 {
+        width: auto;
+        margin-top: 5%;
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+    
+        #hlamb, #hchicken, #hbeef {
+        font-size: 125%;
+        float: right;
+        position: relative;
+        padding: 1% 2% 1% 2%;
+        width: auto;
+        margin-top: -1.2%;
+        margin-right: -1.2%;
+    
+    }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Chicken</a>
+  <a href="#">beef</a>
+  <a href="#">lamb</a>
+ 
+</div>
+
+   <div class="column" id="colum1">
+            <h2 id="hchicken">Chicken</h2>
+            <p id="chiken">This is the chicken menu where we have a lot of wonderful chicken dishes for you to sample. These are the greatest Chicken dishes, we have many customers who say they are tremendous chicken dishes, and they are tremendous.</p>
+        </div>
+        <div class="column" id="colum2">
+            <h2 id="hbeef">Beef</h2>
+            <p id="beef">This is the Beef menu, let me tell you our beef is the greatest beef, it is tremendous. The beef is so tremendous you will eat anything on this menu and you will say to all of your friends that it was the best beef you ever had. Tremendous.</p>
+        </div>
+        <div class="column" id="colum3">
+            <h2 id="hlamb">Lamb</h2>
+            <p id="lamb">This is the Lamb menu and I must say we have the finest lamb, we have many tremendous customers who say this is the best lamb ever. Do you want to know why it's the best lamb ever? It's so tremendous, that is why it is the best.</p>
+        </div>
+    </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
